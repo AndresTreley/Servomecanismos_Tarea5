@@ -1,0 +1,11 @@
+function ej1
+t=0:0.01:10;
+y0=1;
+[t,y]=ode45(@ej11,t,y0);
+plot(t,y);
+xlabel('t');ylabel('y');
+end
+
+function dydt=ej11(t,y)
+dydt=t/y;
+end
